@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #AAB7B8  ;
+	color: #000;
+	font-family: 'roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .footer,
+.contenedor .contenido{
+	background: #fff;
+	padding:20px;
+	border-radius: 4px;
+
+}
+.contenido{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.contenedor .header {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	background: #000;
+	color: #fff;
+}
+.contenedor .sidebar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background: #D68910;
+}
+.contenedor .widget-1,
+.contenedor .widget-2{
+  grid-column-start: ;
+  grid-column-end: ;
+  background: #2E86C1;
+  color: #fff;
+
+}
+.contenedor .footer{
+	grid-column-start: 1;
+	grid-column-end: -1;
+	background: #424949;
+	color: #000;
+}
+ /*media cuery*/
+ @media screen and (max-width: 760px)  
